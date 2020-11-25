@@ -1,3 +1,3 @@
 # encryption
 
-password encryption
+only text encryption
