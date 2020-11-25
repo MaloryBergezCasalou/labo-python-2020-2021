@@ -2,7 +2,7 @@
 # malorybergezcasalou
 # script encryption passwd
 
-typePass = input("type password: ")
+typePass = input("type text: ")
 
 
 def encryption(typePass, decalage=2):
