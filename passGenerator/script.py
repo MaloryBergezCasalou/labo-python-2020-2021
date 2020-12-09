@@ -2,9 +2,6 @@
 # malorybergezcasalou
 # script password generator
 
-"""
-SCRIPT EN COURS
-"""
 
 import random
 import string
@@ -15,11 +12,11 @@ punctuation = string.punctuation
 
 def passwdGenerator(length=12):
     printable = f'{letters}{numbers}{punctuation}'
-    printable = list(printable)
-    random.shuffle(printable)
-
-    randomPass = random.choices(printable)
-    randomPass = ''.join(randomPass)
+    liste = []
+    for _ in range(length):
+        liste.append(random.choice(printable))
+    
+    randomPass = ''.join(liste)
     return randomPass
 
 password = passwdGenerator()
