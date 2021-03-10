@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # malorybergezcasalou
-# script encryption passwd / txt
+# simple script encryption passwd / txt
 
 typePass = input("type text: ")
 
@@ -24,7 +24,7 @@ def encryption(typePass, decalage=2):
             res += chr(ord(lettre) + decalage)
         else:
             res += chr((ord(lettre) + decalage) - 128)
-    
+
     return res
 
 
